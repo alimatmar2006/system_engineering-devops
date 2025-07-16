@@ -1,2 +1,6 @@
-#!/bin/bash
-head -n 3 iacta | tail -n 1
+Alea iacta est
+
+This is a test line.
+Another line.
+Final line.
+Final line.
