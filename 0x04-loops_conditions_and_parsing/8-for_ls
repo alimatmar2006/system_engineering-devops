@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# List each file/dir in the current directory and print only the name after the first dash
+
+for entry in *
+do
+  # Skip if there’s no dash in the name
+  [[ "$entry" != *-* ]] && echo "$entry" && continue
+
+  # Strip everything up to and including the first dash
+  echo "${entry#*-}"
+done
+
